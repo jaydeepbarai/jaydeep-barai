@@ -1,16 +1,26 @@
-import { ArrowRight, Building2, GraduationCap, TrendingUp, Users, Mail, Phone, MapPin, Linkedin, Award, CheckCircle } from 'lucide-react';
+
+import { ArrowRight, Building2, GraduationCap, TrendingUp, Users, Mail, Phone, Linkedin, Award, CheckCircle } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const Index = () => {
+  const prefilledMessage = "Hi Jaydeep! I would like to invest in Dubai Real Estate. Let's connect to discuss about all the available opportunities.";
+  const whatsappUrl = `https://wa.me/+971586936812?text=${encodeURIComponent(prefilledMessage)}`;
+
   return (
     <div className="min-h-screen bg-white">
       {/* Header/Navigation */}
       <header className="bg-white shadow-sm sticky top-0 z-50 border-b border-gray-100">
         <div className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-            <div className="text-2xl font-bold text-navy-900">Jaydeep Barai</div>
+            <div className="flex items-center gap-3">
+              <Avatar className="h-8 w-8">
+                <AvatarImage src="/lovable-uploads/437392be-d6db-4561-a020-350c3214811a.png" alt="Jaydeep Barai" />
+                <AvatarFallback>JB</AvatarFallback>
+              </Avatar>
+              <div className="text-2xl font-bold text-navy-900">Jaydeep Barai</div>
+            </div>
             <nav className="hidden md:flex space-x-8">
               <a href="#about" className="text-gray-600 hover:text-navy-800 transition-colors font-medium">About</a>
               <a href="#services" className="text-gray-600 hover:text-navy-800 transition-colors font-medium">Services</a>
@@ -47,7 +57,7 @@ const Index = () => {
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="bg-navy-800 hover:bg-navy-900 text-white px-8 py-3">
-                  <a href="#contact" className="flex items-center">
+                  <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="flex items-center">
                     Get Investment Advice <ArrowRight className="ml-2 h-5 w-5" />
                   </a>
                 </Button>
@@ -271,9 +281,11 @@ const Index = () => {
             </Card>
           </div>
           <div>
-            <Button size="lg" className="bg-navy-800 hover:bg-navy-900 text-white px-8 py-3 font-semibold">
-              Schedule a Consultation
-            </Button>
+            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+              <Button size="lg" className="bg-navy-800 hover:bg-navy-900 text-white px-8 py-3 font-semibold">
+                Schedule a Consultation
+              </Button>
+            </a>
           </div>
         </div>
       </section>
