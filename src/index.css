@@ -16,8 +16,8 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 210 100% 12%;
+    --primary-foreground: 0 0% 100%;
 
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
@@ -33,7 +33,7 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 210 100% 12%;
 
     --radius: 0.5rem;
 
@@ -48,33 +48,33 @@
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 210 100% 12%;
+    --foreground: 0 0% 100%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 210 100% 12%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 210 100% 12%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 0 0% 100%;
+    --primary-foreground: 210 100% 12%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 210 50% 20%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 210 50% 20%;
+    --muted-foreground: 210 20% 70%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 210 50% 20%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --border: 210 50% 20%;
+    --input: 210 50% 20%;
+    --ring: 0 0% 100%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -117,11 +117,119 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Custom gold color utilities */
-.bg-gold-50 {
-  background-color: #fffbeb;
+/* Navy Blue Color Palette */
+.bg-navy-50 {
+  background-color: #f8fafc;
 }
 
-.text-gold-600 {
-  color: #d97706;
+.bg-navy-100 {
+  background-color: #e2e8f0;
+}
+
+.bg-navy-200 {
+  background-color: #cbd5e1;
+}
+
+.bg-navy-300 {
+  background-color: #94a3b8;
+}
+
+.bg-navy-400 {
+  background-color: #64748b;
+}
+
+.bg-navy-500 {
+  background-color: #475569;
+}
+
+.bg-navy-600 {
+  background-color: #334155;
+}
+
+.bg-navy-700 {
+  background-color: #1e293b;
+}
+
+.bg-navy-800 {
+  background-color: #0f172a;
+}
+
+.bg-navy-900 {
+  background-color: #020617;
+}
+
+.bg-navy-950 {
+  background-color: #0c0a09;
+}
+
+.text-navy-50 {
+  color: #f8fafc;
+}
+
+.text-navy-100 {
+  color: #e2e8f0;
+}
+
+.text-navy-200 {
+  color: #cbd5e1;
+}
+
+.text-navy-300 {
+  color: #94a3b8;
+}
+
+.text-navy-400 {
+  color: #64748b;
+}
+
+.text-navy-500 {
+  color: #475569;
+}
+
+.text-navy-600 {
+  color: #334155;
+}
+
+.text-navy-700 {
+  color: #1e293b;
+}
+
+.text-navy-800 {
+  color: #0f172a;
+}
+
+.text-navy-900 {
+  color: #020617;
+}
+
+.border-navy-100 {
+  border-color: #e2e8f0;
+}
+
+.border-navy-200 {
+  border-color: #cbd5e1;
+}
+
+.border-navy-800 {
+  border-color: #0f172a;
+}
+
+.hover\:bg-navy-50:hover {
+  background-color: #f8fafc;
+}
+
+.hover\:bg-navy-100:hover {
+  background-color: #e2e8f0;
+}
+
+.hover\:bg-navy-900:hover {
+  background-color: #020617;
+}
+
+.hover\:text-navy-800:hover {
+  color: #0f172a;
+}
+
+.hover\:border-navy-200:hover {
+  border-color: #cbd5e1;
 }

@@ -1,48 +1,74 @@
 
-import { ArrowRight, Building2, GraduationCap, TrendingUp, Users, Mail, Phone, MapPin, Linkedin } from 'lucide-react';
+import { ArrowRight, Building2, GraduationCap, TrendingUp, Users, Mail, Phone, MapPin, Linkedin, Award, CheckCircle } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-white">
       {/* Header/Navigation */}
-      <header className="bg-white/90 backdrop-blur-sm shadow-sm sticky top-0 z-50">
+      <header className="bg-white shadow-sm sticky top-0 z-50 border-b border-gray-100">
         <div className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-            <div className="text-2xl font-bold text-slate-900">Jaydeep Barai</div>
+            <div className="text-2xl font-bold text-navy-900">Jaydeep Barai</div>
             <nav className="hidden md:flex space-x-8">
-              <a href="#about" className="text-slate-700 hover:text-blue-600 transition-colors">About</a>
-              <a href="#services" className="text-slate-700 hover:text-blue-600 transition-colors">Services</a>
-              <a href="#experience" className="text-slate-700 hover:text-blue-600 transition-colors">Experience</a>
-              <a href="#contact" className="text-slate-700 hover:text-blue-600 transition-colors">Contact</a>
+              <a href="#about" className="text-gray-600 hover:text-navy-800 transition-colors font-medium">About</a>
+              <a href="#services" className="text-gray-600 hover:text-navy-800 transition-colors font-medium">Services</a>
+              <a href="#experience" className="text-gray-600 hover:text-navy-800 transition-colors font-medium">Experience</a>
+              <a href="#contact" className="text-gray-600 hover:text-navy-800 transition-colors font-medium">Contact</a>
             </nav>
           </div>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="py-20 px-6">
-        <div className="container mx-auto text-center">
-          <div className="animate-fade-in">
-            <h1 className="text-5xl md:text-7xl font-bold text-slate-900 mb-6">
-              Jaydeep Barai
-            </h1>
-            <p className="text-xl md:text-2xl text-slate-600 mb-4">
-              RERA Certified Real Estate Investment Advisor
-            </p>
-            <p className="text-lg text-slate-500 mb-8 max-w-2xl mx-auto">
-              Transforming Dubai's real estate landscape with tech-driven insights and 4+ years of expertise
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3">
-                <a href="#contact" className="flex items-center">
-                  Get Investment Advice <ArrowRight className="ml-2 h-5 w-5" />
-                </a>
-              </Button>
-              <Button variant="outline" size="lg" className="px-8 py-3">
-                <a href="#about">Learn More About Me</a>
-              </Button>
+      <section className="py-20 px-6 bg-gradient-to-br from-white to-gray-50">
+        <div className="container mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="animate-fade-in">
+              <h1 className="text-5xl md:text-6xl font-bold text-navy-900 mb-4">
+                Jaydeep Barai
+              </h1>
+              <p className="text-xl md:text-2xl text-navy-700 mb-4 font-semibold">
+                RERA Certified Real Estate Investment Advisor
+              </p>
+              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+                Transforming Dubai's real estate landscape with tech-driven insights and 4+ years of market expertise. Your trusted partner for strategic property investments.
+              </p>
+              <div className="flex items-center space-x-4 mb-8">
+                <div className="flex items-center space-x-2">
+                  <Award className="h-5 w-5 text-navy-600" />
+                  <span className="text-sm font-medium text-gray-700">RERA Certified</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <CheckCircle className="h-5 w-5 text-navy-600" />
+                  <span className="text-sm font-medium text-gray-700">4+ Years Experience</span>
+                </div>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button size="lg" className="bg-navy-800 hover:bg-navy-900 text-white px-8 py-3">
+                  <a href="#contact" className="flex items-center">
+                    Get Investment Advice <ArrowRight className="ml-2 h-5 w-5" />
+                  </a>
+                </Button>
+                <Button variant="outline" size="lg" className="px-8 py-3 border-navy-200 text-navy-800 hover:bg-navy-50">
+                  <a href="#about">Learn More About Me</a>
+                </Button>
+              </div>
+            </div>
+            <div className="animate-fade-in flex justify-center lg:justify-end">
+              <div className="relative">
+                <div className="absolute inset-0 bg-navy-200 rounded-2xl transform rotate-3"></div>
+                <Avatar className="relative w-80 h-80 md:w-96 md:h-96 rounded-2xl shadow-2xl">
+                  <AvatarImage 
+                    src="/lovable-uploads/437392be-d6db-4561-a020-350c3214811a.png" 
+                    alt="Jaydeep Barai - RERA Certified Real Estate Investment Advisor"
+                    className="object-cover rounded-2xl"
+                  />
+                  <AvatarFallback className="text-4xl bg-navy-100 text-navy-800 rounded-2xl">JB</AvatarFallback>
+                </Avatar>
+              </div>
             </div>
           </div>
         </div>
@@ -51,48 +77,64 @@ const Index = () => {
       {/* About Section */}
       <section id="about" className="py-20 px-6 bg-white">
         <div className="container mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-navy-900 mb-4">About Me</h2>
+            <div className="w-24 h-1 bg-navy-600 mx-auto mb-6"></div>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Bridging technology and real estate expertise to deliver exceptional investment opportunities in Dubai's dynamic market
+            </p>
+          </div>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
-              <h2 className="text-4xl font-bold text-slate-900 mb-6">About Me</h2>
-              <p className="text-lg text-slate-600 mb-6">
+              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 With a unique blend of technology expertise and real estate acumen, I bring a fresh perspective to Dubai's dynamic property market. My journey from IT professional to RERA certified Real Estate Investment Advisor has equipped me with analytical skills that help clients make data-driven investment decisions.
               </p>
-              <p className="text-lg text-slate-600 mb-6">
+              <p className="text-lg text-gray-700 mb-8 leading-relaxed">
                 Having worked as a Web Developer and Digital Marketing specialist for 4-5 years, I understand the power of technology in real estate. For the past 4 years, I've been helping investors navigate Dubai's lucrative property market, combining my technical background with deep market knowledge.
               </p>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="text-center p-4 bg-blue-50 rounded-lg">
-                  <div className="text-2xl font-bold text-blue-600">4+</div>
-                  <div className="text-sm text-slate-600">Years in Dubai Real Estate</div>
+              <div className="grid grid-cols-3 gap-6">
+                <div className="text-center p-6 bg-gray-50 rounded-xl">
+                  <div className="text-3xl font-bold text-navy-800">4+</div>
+                  <div className="text-sm text-gray-600 font-medium">Years in Dubai Real Estate</div>
                 </div>
-                <div className="text-center p-4 bg-gold-50 rounded-lg">
-                  <div className="text-2xl font-bold text-amber-600">RERA</div>
-                  <div className="text-sm text-slate-600">Certified Advisor</div>
+                <div className="text-center p-6 bg-navy-50 rounded-xl">
+                  <div className="text-3xl font-bold text-navy-800">RERA</div>
+                  <div className="text-sm text-gray-600 font-medium">Certified Advisor</div>
+                </div>
+                <div className="text-center p-6 bg-gray-50 rounded-xl">
+                  <div className="text-3xl font-bold text-navy-800">8+</div>
+                  <div className="text-sm text-gray-600 font-medium">Years Combined Experience</div>
                 </div>
               </div>
             </div>
             <div className="animate-fade-in">
-              <Card className="p-8 bg-gradient-to-br from-blue-50 to-slate-50">
+              <Card className="p-8 bg-gradient-to-br from-navy-50 to-gray-50 border-navy-100">
                 <CardContent className="space-y-6">
                   <div className="flex items-center space-x-4">
-                    <GraduationCap className="h-8 w-8 text-blue-600" />
+                    <div className="bg-navy-100 p-3 rounded-full">
+                      <GraduationCap className="h-6 w-6 text-navy-700" />
+                    </div>
                     <div>
-                      <h3 className="font-semibold text-slate-900">Education</h3>
-                      <p className="text-slate-600">Bachelor's in Information Technology</p>
+                      <h3 className="font-semibold text-navy-900 text-lg">Education</h3>
+                      <p className="text-gray-600">Bachelor's in Information Technology</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-4">
-                    <Building2 className="h-8 w-8 text-blue-600" />
+                    <div className="bg-navy-100 p-3 rounded-full">
+                      <Building2 className="h-6 w-6 text-navy-700" />
+                    </div>
                     <div>
-                      <h3 className="font-semibold text-slate-900">Specialization</h3>
-                      <p className="text-slate-600">Dubai Real Estate Investment</p>
+                      <h3 className="font-semibold text-navy-900 text-lg">Specialization</h3>
+                      <p className="text-gray-600">Dubai Real Estate Investment & Advisory</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-4">
-                    <TrendingUp className="h-8 w-8 text-blue-600" />
+                    <div className="bg-navy-100 p-3 rounded-full">
+                      <TrendingUp className="h-6 w-6 text-navy-700" />
+                    </div>
                     <div>
-                      <h3 className="font-semibold text-slate-900">Experience</h3>
-                      <p className="text-slate-600">8+ Years Combined Tech & Real Estate</p>
+                      <h3 className="font-semibold text-navy-900 text-lg">Expertise</h3>
+                      <p className="text-gray-600">Tech-Driven Market Analysis & ROI Optimization</p>
                     </div>
                   </div>
                 </CardContent>
@@ -103,34 +145,41 @@ const Index = () => {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 px-6 bg-slate-50">
+      <section id="services" className="py-20 px-6 bg-gray-50">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-slate-900 mb-4">My Services</h2>
-            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+            <h2 className="text-4xl font-bold text-navy-900 mb-4">My Services</h2>
+            <div className="w-24 h-1 bg-navy-600 mx-auto mb-6"></div>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Comprehensive real estate investment solutions tailored for the Dubai market
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="p-8 hover:shadow-lg transition-shadow animate-fade-in">
-              <CardContent className="text-center space-y-4">
-                <Building2 className="h-12 w-12 text-blue-600 mx-auto" />
-                <h3 className="text-xl font-semibold text-slate-900">Investment Consultation</h3>
-                <p className="text-slate-600">Expert guidance on Dubai property investments with market analysis and ROI projections</p>
+            <Card className="p-8 hover:shadow-xl transition-all duration-300 animate-fade-in bg-white border-gray-100 hover:border-navy-200">
+              <CardContent className="text-center space-y-6">
+                <div className="bg-navy-100 p-4 rounded-full w-16 h-16 mx-auto flex items-center justify-center">
+                  <Building2 className="h-8 w-8 text-navy-700" />
+                </div>
+                <h3 className="text-xl font-semibold text-navy-900">Investment Consultation</h3>
+                <p className="text-gray-600 leading-relaxed">Expert guidance on Dubai property investments with comprehensive market analysis and detailed ROI projections</p>
               </CardContent>
             </Card>
-            <Card className="p-8 hover:shadow-lg transition-shadow animate-fade-in">
-              <CardContent className="text-center space-y-4">
-                <TrendingUp className="h-12 w-12 text-blue-600 mx-auto" />
-                <h3 className="text-xl font-semibold text-slate-900">Market Analysis</h3>
-                <p className="text-slate-600">Data-driven insights and trends analysis for informed investment decisions</p>
+            <Card className="p-8 hover:shadow-xl transition-all duration-300 animate-fade-in bg-white border-gray-100 hover:border-navy-200">
+              <CardContent className="text-center space-y-6">
+                <div className="bg-navy-100 p-4 rounded-full w-16 h-16 mx-auto flex items-center justify-center">
+                  <TrendingUp className="h-8 w-8 text-navy-700" />
+                </div>
+                <h3 className="text-xl font-semibold text-navy-900">Market Analysis</h3>
+                <p className="text-gray-600 leading-relaxed">Data-driven insights and comprehensive trends analysis for informed investment decisions in Dubai's market</p>
               </CardContent>
             </Card>
-            <Card className="p-8 hover:shadow-lg transition-shadow animate-fade-in">
-              <CardContent className="text-center space-y-4">
-                <Users className="h-12 w-12 text-blue-600 mx-auto" />
-                <h3 className="text-xl font-semibold text-slate-900">Client Advisory</h3>
-                <p className="text-slate-600">Personalized real estate strategies aligned with your financial goals</p>
+            <Card className="p-8 hover:shadow-xl transition-all duration-300 animate-fade-in bg-white border-gray-100 hover:border-navy-200">
+              <CardContent className="text-center space-y-6">
+                <div className="bg-navy-100 p-4 rounded-full w-16 h-16 mx-auto flex items-center justify-center">
+                  <Users className="h-8 w-8 text-navy-700" />
+                </div>
+                <h3 className="text-xl font-semibold text-navy-900">Client Advisory</h3>
+                <p className="text-gray-600 leading-relaxed">Personalized real estate strategies perfectly aligned with your financial goals and investment timeline</p>
               </CardContent>
             </Card>
           </div>
@@ -141,39 +190,40 @@ const Index = () => {
       <section id="experience" className="py-20 px-6 bg-white">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-slate-900 mb-4">Professional Journey</h2>
-            <p className="text-xl text-slate-600">From technology to real estate excellence</p>
+            <h2 className="text-4xl font-bold text-navy-900 mb-4">Professional Journey</h2>
+            <div className="w-24 h-1 bg-navy-600 mx-auto mb-6"></div>
+            <p className="text-xl text-gray-600">From technology excellence to real estate mastery</p>
           </div>
           <div className="max-w-4xl mx-auto">
-            <div className="space-y-8">
+            <div className="space-y-12">
               <div className="flex items-start space-x-6 animate-fade-in">
-                <div className="bg-blue-600 text-white rounded-full p-3 mt-1">
+                <div className="bg-navy-800 text-white rounded-full p-4 mt-1 shadow-lg">
                   <Building2 className="h-6 w-6" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl font-semibold text-slate-900">Real Estate Investment Advisor</h3>
-                  <p className="text-blue-600 font-medium">2020 - Present (4+ Years)</p>
-                  <p className="text-slate-600 mt-2">RERA certified advisor specializing in Dubai property investments, helping clients achieve optimal returns through strategic market positioning and data-driven insights.</p>
+                  <h3 className="text-2xl font-semibold text-navy-900 mb-2">Real Estate Investment Advisor</h3>
+                  <p className="text-navy-600 font-semibold mb-3">2020 - Present (4+ Years)</p>
+                  <p className="text-gray-700 leading-relaxed">RERA certified advisor specializing in Dubai property investments, helping clients achieve optimal returns through strategic market positioning and data-driven insights. Successfully guided numerous investors through Dubai's dynamic real estate landscape.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-6 animate-fade-in">
-                <div className="bg-slate-600 text-white rounded-full p-3 mt-1">
+                <div className="bg-gray-600 text-white rounded-full p-4 mt-1 shadow-lg">
                   <TrendingUp className="h-6 w-6" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl font-semibold text-slate-900">Web Developer & Digital Marketing Specialist</h3>
-                  <p className="text-slate-600 font-medium">2015 - 2020 (4-5 Years)</p>
-                  <p className="text-slate-600 mt-2">Developed web solutions and digital marketing strategies, building the technical foundation that now enhances my real estate advisory services.</p>
+                  <h3 className="text-2xl font-semibold text-navy-900 mb-2">Web Developer & Digital Marketing Specialist</h3>
+                  <p className="text-gray-600 font-semibold mb-3">2015 - 2020 (4-5 Years)</p>
+                  <p className="text-gray-700 leading-relaxed">Developed innovative web solutions and executed comprehensive digital marketing strategies, building the technical foundation that now enhances my real estate advisory services with cutting-edge analytical capabilities.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-6 animate-fade-in">
-                <div className="bg-amber-600 text-white rounded-full p-3 mt-1">
+                <div className="bg-navy-600 text-white rounded-full p-4 mt-1 shadow-lg">
                   <GraduationCap className="h-6 w-6" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl font-semibold text-slate-900">Bachelor's in Information Technology</h3>
-                  <p className="text-slate-600 font-medium">Academic Foundation</p>
-                  <p className="text-slate-600 mt-2">Strong technical education providing analytical skills and problem-solving abilities that translate perfectly to real estate market analysis.</p>
+                  <h3 className="text-2xl font-semibold text-navy-900 mb-2">Bachelor's in Information Technology</h3>
+                  <p className="text-gray-600 font-semibold mb-3">Academic Foundation</p>
+                  <p className="text-gray-700 leading-relaxed">Strong technical education providing advanced analytical skills and problem-solving abilities that translate perfectly to real estate market analysis and investment strategy development.</p>
                 </div>
               </div>
             </div>
@@ -182,39 +232,40 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 px-6 bg-gradient-to-br from-blue-900 to-slate-900 text-white">
+      <section id="contact" className="py-20 px-6 bg-gradient-to-br from-navy-900 to-navy-800 text-white">
         <div className="container mx-auto text-center">
           <h2 className="text-4xl font-bold mb-4">Let's Connect</h2>
-          <p className="text-xl text-blue-200 mb-12 max-w-2xl mx-auto">
-            Ready to explore Dubai's real estate opportunities? Let's discuss your investment goals.
+          <div className="w-24 h-1 bg-white mx-auto mb-6"></div>
+          <p className="text-xl text-navy-200 mb-12 max-w-2xl mx-auto">
+            Ready to explore Dubai's real estate opportunities? Let's discuss your investment goals and create a winning strategy together.
           </p>
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <Card className="bg-white/10 border-white/20 backdrop-blur-sm">
-              <CardContent className="p-6 text-center">
-                <Mail className="h-8 w-8 text-blue-400 mx-auto mb-4" />
-                <h3 className="font-semibold mb-2">Email</h3>
-                <p className="text-blue-200">Available on request</p>
+          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-12">
+            <Card className="bg-white/10 border-white/20 backdrop-blur-sm hover:bg-white/15 transition-all">
+              <CardContent className="p-8 text-center">
+                <Mail className="h-10 w-10 text-navy-300 mx-auto mb-4" />
+                <h3 className="font-semibold mb-2 text-lg">Email</h3>
+                <p className="text-navy-200">Available on request</p>
               </CardContent>
             </Card>
-            <Card className="bg-white/10 border-white/20 backdrop-blur-sm">
-              <CardContent className="p-6 text-center">
-                <Phone className="h-8 w-8 text-blue-400 mx-auto mb-4" />
-                <h3 className="font-semibold mb-2">Phone</h3>
-                <p className="text-blue-200">Available on request</p>
+            <Card className="bg-white/10 border-white/20 backdrop-blur-sm hover:bg-white/15 transition-all">
+              <CardContent className="p-8 text-center">
+                <Phone className="h-10 w-10 text-navy-300 mx-auto mb-4" />
+                <h3 className="font-semibold mb-2 text-lg">Phone</h3>
+                <p className="text-navy-200">Available on request</p>
               </CardContent>
             </Card>
-            <Card className="bg-white/10 border-white/20 backdrop-blur-sm">
-              <CardContent className="p-6 text-center">
-                <Linkedin className="h-8 w-8 text-blue-400 mx-auto mb-4" />
-                <h3 className="font-semibold mb-2">LinkedIn</h3>
-                <a href="https://www.linkedin.com/in/jaydeepbarai/" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:text-blue-200 transition-colors">
+            <Card className="bg-white/10 border-white/20 backdrop-blur-sm hover:bg-white/15 transition-all">
+              <CardContent className="p-8 text-center">
+                <Linkedin className="h-10 w-10 text-navy-300 mx-auto mb-4" />
+                <h3 className="font-semibold mb-2 text-lg">LinkedIn</h3>
+                <a href="https://www.linkedin.com/in/jaydeepbarai/" target="_blank" rel="noopener noreferrer" className="text-navy-200 hover:text-white transition-colors">
                   Connect with me
                 </a>
               </CardContent>
             </Card>
           </div>
-          <div className="mt-12">
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3">
+          <div>
+            <Button size="lg" className="bg-white text-navy-900 hover:bg-gray-100 px-8 py-3 font-semibold">
               Schedule a Consultation
             </Button>
           </div>
@@ -222,13 +273,13 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 px-6 bg-slate-900 text-white">
+      <footer className="py-8 px-6 bg-navy-950 text-white border-t border-navy-800">
         <div className="container mx-auto text-center">
           <div className="flex items-center justify-center space-x-2 mb-4">
-            <MapPin className="h-5 w-5 text-blue-400" />
-            <span>Dubai, UAE</span>
+            <MapPin className="h-5 w-5 text-navy-400" />
+            <span className="text-navy-200">Dubai, UAE</span>
           </div>
-          <p className="text-slate-400">
+          <p className="text-navy-400">
             © 2024 Jaydeep Barai. RERA Certified Real Estate Investment Advisor.
           </p>
         </div>
