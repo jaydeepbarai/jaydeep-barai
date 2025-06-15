@@ -1,4 +1,3 @@
-
 import { ArrowRight, Building2, GraduationCap, TrendingUp, Users, Mail, Phone, MapPin, Linkedin, Award, CheckCircle } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -90,7 +89,7 @@ const Index = () => {
                 With a unique blend of technology expertise and real estate acumen, I bring a fresh perspective to Dubai's dynamic property market. My journey from IT professional to RERA certified Real Estate Investment Advisor has equipped me with analytical skills that help clients make data-driven investment decisions.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Having worked as a Web Developer and Digital Marketing specialist for 4-5 years, I understand the power of technology in real estate. For the past 4 years, I've been helping investors navigate Dubai's lucrative property market as a UAE Golden Visa Holder, combining my technical background with deep market knowledge.
+                Having worked as a Web Developer and Digital Marketing specialist for 4-5 years, I understand the power of technology in real estate. For the past 4 years, I've been helping investors navigate Dubai's lucrative property market, combining my technical background with deep market knowledge.
               </p>
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
                 As a UAE Golden Visa Holder, I have deep roots in the Emirates and a comprehensive understanding of the local market dynamics that benefit my international and local clients.
@@ -235,44 +234,44 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 px-6 bg-gradient-to-br from-navy-900 to-navy-800 text-white">
+      <section id="contact" className="py-20 px-6 bg-gray-50">
         <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-bold text-white mb-4">Let's Connect</h2>
-          <div className="w-24 h-1 bg-white mx-auto mb-6"></div>
-          <p className="text-xl text-navy-100 mb-12 max-w-2xl mx-auto">
+          <h2 className="text-4xl font-bold text-navy-900 mb-4">Let's Connect</h2>
+          <div className="w-24 h-1 bg-navy-600 mx-auto mb-6"></div>
+          <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
             Ready to explore Dubai's real estate opportunities? Let's discuss your investment goals and create a winning strategy together.
           </p>
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-12">
-            <Card className="bg-white/10 border-white/20 backdrop-blur-sm hover:bg-white/15 transition-all">
+            <Card className="bg-white border-gray-100 hover:border-navy-200 hover:shadow-xl transition-all">
               <CardContent className="p-8 text-center">
-                <Mail className="h-10 w-10 text-white mx-auto mb-4" />
-                <h3 className="font-semibold mb-2 text-lg text-white">Email</h3>
-                <a href="mailto:baraijaydeep13@gmail.com" className="text-navy-100 hover:text-white transition-colors">
+                <Mail className="h-10 w-10 text-navy-700 mx-auto mb-4" />
+                <h3 className="font-semibold mb-2 text-lg text-navy-900">Email</h3>
+                <a href="mailto:baraijaydeep13@gmail.com" className="text-gray-600 hover:text-navy-800 transition-colors">
                   baraijaydeep13@gmail.com
                 </a>
               </CardContent>
             </Card>
-            <Card className="bg-white/10 border-white/20 backdrop-blur-sm hover:bg-white/15 transition-all">
+            <Card className="bg-white border-gray-100 hover:border-navy-200 hover:shadow-xl transition-all">
               <CardContent className="p-8 text-center">
-                <Phone className="h-10 w-10 text-white mx-auto mb-4" />
-                <h3 className="font-semibold mb-2 text-lg text-white">Phone</h3>
-                <a href="tel:+971586936812" className="text-navy-100 hover:text-white transition-colors">
+                <Phone className="h-10 w-10 text-navy-700 mx-auto mb-4" />
+                <h3 className="font-semibold mb-2 text-lg text-navy-900">Phone</h3>
+                <a href="tel:+971586936812" className="text-gray-600 hover:text-navy-800 transition-colors">
                   +971 58 693 6812
                 </a>
               </CardContent>
             </Card>
-            <Card className="bg-white/10 border-white/20 backdrop-blur-sm hover:bg-white/15 transition-all">
+            <Card className="bg-white border-gray-100 hover:border-navy-200 hover:shadow-xl transition-all">
               <CardContent className="p-8 text-center">
-                <Linkedin className="h-10 w-10 text-white mx-auto mb-4" />
-                <h3 className="font-semibold mb-2 text-lg text-white">LinkedIn</h3>
-                <a href="https://www.linkedin.com/in/jaydeepbarai/" target="_blank" rel="noopener noreferrer" className="text-navy-100 hover:text-white transition-colors">
+                <Linkedin className="h-10 w-10 text-navy-700 mx-auto mb-4" />
+                <h3 className="font-semibold mb-2 text-lg text-navy-900">LinkedIn</h3>
+                <a href="https://www.linkedin.com/in/jaydeepbarai/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-navy-800 transition-colors">
                   Connect with me
                 </a>
               </CardContent>
             </Card>
           </div>
           <div>
-            <Button size="lg" className="bg-white text-navy-900 hover:bg-gray-100 px-8 py-3 font-semibold">
+            <Button size="lg" className="bg-navy-800 hover:bg-navy-900 text-white px-8 py-3 font-semibold">
               Schedule a Consultation
             </Button>
           </div>
