@@ -89,19 +89,22 @@ const Index = () => {
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 With a unique blend of technology expertise and real estate acumen, I bring a fresh perspective to Dubai's dynamic property market. My journey from IT professional to RERA certified Real Estate Investment Advisor has equipped me with analytical skills that help clients make data-driven investment decisions.
               </p>
+              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                Having worked as a Web Developer and Digital Marketing specialist for 4-5 years, I understand the power of technology in real estate. For the past 4 years, I've been helping investors navigate Dubai's lucrative property market as a UAE Golden Visa Holder, combining my technical background with deep market knowledge.
+              </p>
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                Having worked as a Web Developer and Digital Marketing specialist for 4-5 years, I understand the power of technology in real estate. For the past 4 years, I've been helping investors navigate Dubai's lucrative property market, combining my technical background with deep market knowledge.
+                As a UAE Golden Visa Holder, I have deep roots in the Emirates and a comprehensive understanding of the local market dynamics that benefit my international and local clients.
               </p>
               <div className="grid grid-cols-3 gap-6">
-                <div className="text-center p-6 bg-gray-50 rounded-xl">
+                <div className="text-center p-6 bg-gray-50 rounded-xl border border-gray-100">
                   <div className="text-3xl font-bold text-navy-800">4+</div>
                   <div className="text-sm text-gray-600 font-medium">Years in Dubai Real Estate</div>
                 </div>
-                <div className="text-center p-6 bg-navy-50 rounded-xl">
+                <div className="text-center p-6 bg-navy-50 rounded-xl border border-navy-100">
                   <div className="text-3xl font-bold text-navy-800">RERA</div>
                   <div className="text-sm text-gray-600 font-medium">Certified Advisor</div>
                 </div>
-                <div className="text-center p-6 bg-gray-50 rounded-xl">
+                <div className="text-center p-6 bg-gray-50 rounded-xl border border-gray-100">
                   <div className="text-3xl font-bold text-navy-800">8+</div>
                   <div className="text-sm text-gray-600 font-medium">Years Combined Experience</div>
                 </div>
@@ -207,22 +210,22 @@ const Index = () => {
                 </div>
               </div>
               <div className="flex items-start space-x-6 animate-fade-in">
-                <div className="bg-gray-600 text-white rounded-full p-4 mt-1 shadow-lg">
+                <div className="bg-navy-600 text-white rounded-full p-4 mt-1 shadow-lg">
                   <TrendingUp className="h-6 w-6" />
                 </div>
                 <div className="flex-1">
                   <h3 className="text-2xl font-semibold text-navy-900 mb-2">Web Developer & Digital Marketing Specialist</h3>
-                  <p className="text-gray-600 font-semibold mb-3">2015 - 2020 (4-5 Years)</p>
+                  <p className="text-navy-600 font-semibold mb-3">2015 - 2020 (4-5 Years)</p>
                   <p className="text-gray-700 leading-relaxed">Developed innovative web solutions and executed comprehensive digital marketing strategies, building the technical foundation that now enhances my real estate advisory services with cutting-edge analytical capabilities.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-6 animate-fade-in">
-                <div className="bg-navy-600 text-white rounded-full p-4 mt-1 shadow-lg">
+                <div className="bg-navy-700 text-white rounded-full p-4 mt-1 shadow-lg">
                   <GraduationCap className="h-6 w-6" />
                 </div>
                 <div className="flex-1">
                   <h3 className="text-2xl font-semibold text-navy-900 mb-2">Bachelor's in Information Technology</h3>
-                  <p className="text-gray-600 font-semibold mb-3">Academic Foundation</p>
+                  <p className="text-navy-600 font-semibold mb-3">Academic Foundation</p>
                   <p className="text-gray-700 leading-relaxed">Strong technical education providing advanced analytical skills and problem-solving abilities that translate perfectly to real estate market analysis and investment strategy development.</p>
                 </div>
               </div>
@@ -234,31 +237,31 @@ const Index = () => {
       {/* Contact Section */}
       <section id="contact" className="py-20 px-6 bg-gradient-to-br from-navy-900 to-navy-800 text-white">
         <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-4">Let's Connect</h2>
+          <h2 className="text-4xl font-bold text-white mb-4">Let's Connect</h2>
           <div className="w-24 h-1 bg-white mx-auto mb-6"></div>
-          <p className="text-xl text-navy-200 mb-12 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-200 mb-12 max-w-2xl mx-auto">
             Ready to explore Dubai's real estate opportunities? Let's discuss your investment goals and create a winning strategy together.
           </p>
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-12">
             <Card className="bg-white/10 border-white/20 backdrop-blur-sm hover:bg-white/15 transition-all">
               <CardContent className="p-8 text-center">
-                <Mail className="h-10 w-10 text-navy-300 mx-auto mb-4" />
-                <h3 className="font-semibold mb-2 text-lg">Email</h3>
-                <p className="text-navy-200">Available on request</p>
+                <Mail className="h-10 w-10 text-white mx-auto mb-4" />
+                <h3 className="font-semibold mb-2 text-lg text-white">Email</h3>
+                <p className="text-gray-200">Available on request</p>
               </CardContent>
             </Card>
             <Card className="bg-white/10 border-white/20 backdrop-blur-sm hover:bg-white/15 transition-all">
               <CardContent className="p-8 text-center">
-                <Phone className="h-10 w-10 text-navy-300 mx-auto mb-4" />
-                <h3 className="font-semibold mb-2 text-lg">Phone</h3>
-                <p className="text-navy-200">Available on request</p>
+                <Phone className="h-10 w-10 text-white mx-auto mb-4" />
+                <h3 className="font-semibold mb-2 text-lg text-white">Phone</h3>
+                <p className="text-gray-200">Available on request</p>
               </CardContent>
             </Card>
             <Card className="bg-white/10 border-white/20 backdrop-blur-sm hover:bg-white/15 transition-all">
               <CardContent className="p-8 text-center">
-                <Linkedin className="h-10 w-10 text-navy-300 mx-auto mb-4" />
-                <h3 className="font-semibold mb-2 text-lg">LinkedIn</h3>
-                <a href="https://www.linkedin.com/in/jaydeepbarai/" target="_blank" rel="noopener noreferrer" className="text-navy-200 hover:text-white transition-colors">
+                <Linkedin className="h-10 w-10 text-white mx-auto mb-4" />
+                <h3 className="font-semibold mb-2 text-lg text-white">LinkedIn</h3>
+                <a href="https://www.linkedin.com/in/jaydeepbarai/" target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-white transition-colors">
                   Connect with me
                 </a>
               </CardContent>
@@ -273,14 +276,10 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 px-6 bg-navy-950 text-white border-t border-navy-800">
+      <footer className="py-8 px-6 bg-navy-950 text-white">
         <div className="container mx-auto text-center">
-          <div className="flex items-center justify-center space-x-2 mb-4">
-            <MapPin className="h-5 w-5 text-navy-400" />
-            <span className="text-navy-200">Dubai, UAE</span>
-          </div>
-          <p className="text-navy-400">
-            © 2024 Jaydeep Barai. RERA Certified Real Estate Investment Advisor.
+          <p className="text-gray-300">
+            © 2025 Jaydeep Barai
           </p>
         </div>
       </footer>
