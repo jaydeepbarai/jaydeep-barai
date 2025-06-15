@@ -239,7 +239,7 @@ const Index = () => {
         <div className="container mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-4">Let's Connect</h2>
           <div className="w-24 h-1 bg-white mx-auto mb-6"></div>
-          <p className="text-xl text-gray-200 mb-12 max-w-2xl mx-auto">
+          <p className="text-xl text-navy-100 mb-12 max-w-2xl mx-auto">
             Ready to explore Dubai's real estate opportunities? Let's discuss your investment goals and create a winning strategy together.
           </p>
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-12">
@@ -247,21 +247,25 @@ const Index = () => {
               <CardContent className="p-8 text-center">
                 <Mail className="h-10 w-10 text-white mx-auto mb-4" />
                 <h3 className="font-semibold mb-2 text-lg text-white">Email</h3>
-                <p className="text-gray-200">Available on request</p>
+                <a href="mailto:baraijaydeep13@gmail.com" className="text-navy-100 hover:text-white transition-colors">
+                  baraijaydeep13@gmail.com
+                </a>
               </CardContent>
             </Card>
             <Card className="bg-white/10 border-white/20 backdrop-blur-sm hover:bg-white/15 transition-all">
               <CardContent className="p-8 text-center">
                 <Phone className="h-10 w-10 text-white mx-auto mb-4" />
                 <h3 className="font-semibold mb-2 text-lg text-white">Phone</h3>
-                <p className="text-gray-200">Available on request</p>
+                <a href="tel:+971586936812" className="text-navy-100 hover:text-white transition-colors">
+                  +971 58 693 6812
+                </a>
               </CardContent>
             </Card>
             <Card className="bg-white/10 border-white/20 backdrop-blur-sm hover:bg-white/15 transition-all">
               <CardContent className="p-8 text-center">
                 <Linkedin className="h-10 w-10 text-white mx-auto mb-4" />
                 <h3 className="font-semibold mb-2 text-lg text-white">LinkedIn</h3>
-                <a href="https://www.linkedin.com/in/jaydeepbarai/" target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-white transition-colors">
+                <a href="https://www.linkedin.com/in/jaydeepbarai/" target="_blank" rel="noopener noreferrer" className="text-navy-100 hover:text-white transition-colors">
                   Connect with me
                 </a>
               </CardContent>
